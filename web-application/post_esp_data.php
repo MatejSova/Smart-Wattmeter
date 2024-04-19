@@ -1,5 +1,5 @@
 <?php
-$dbname = "";
+$dbname = "smarthome";
 $username = "";
 $password = "";
 $api_key= $zariadenie = $napatie = $value1 = $prud_senzor_1 = $prud_senzor_2 = $prud_senzor_3 = "";

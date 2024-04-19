@@ -1,0 +1,285 @@
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}	
+
+body {
+	font-family:Verdana;
+	background-color: #435165;
+	color: white;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.header {
+  background-color:#435165;
+  padding:15px;
+  color: white;
+  text-align:center;
+  flex: 1 10%;
+}
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 2 80%;
+}
+
+.content > * {
+	flex: 1;
+}
+
+.menu {
+  order: 1;
+  text-align: center;
+}
+
+.main {
+  order: 2;
+  flex: 3;
+  overflow-wrap: break-word;
+}
+
+.footer{
+  height:50px;
+  text-align:left;
+  color: white;
+  padding:15px;
+  flex: 0;
+}
+
+.myChart {
+	background-color: red;
+	height:100%;
+}
+
+.menu h2 {
+  color: grey;
+  margin-bottom: 20px;
+  padding: 8px;
+  margin-top: 7px;
+  display: grid;
+  width: 100%;
+}
+
+.menu a {
+  background-color: #435165;
+  padding: 15px 0px 15px 0px;
+  display: grid;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.menu a:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+	padding: 15px 0px 15px 0px;
+	width: 100%;
+}
+
+/*graphs*/
+.info_graphs{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottm: 30px;
+}
+
+.info_graphs h3 {
+	text-align: center;
+}
+
+.actual_graphs{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottm: 30px;
+}
+
+/*login*/
+
+.login, .register {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+
+.login h1, .register h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+
+.login form, .register form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+
+.login form label, .register form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+
+.login form input[type="password"], .login form input[type="text"], .register form input[type="text"], .register form input[type="password"], .register form input[type="email"], .register form select {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+
+.login form input[type="submit"], .login form a[type="registration"], .register form input[type="submit"] {
+  	width: 30%;
+  	padding: 15px;
+ 	margin: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover, login from a[type="registration"], .register form input [type="submit"] {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+.login form a[type="registration"] {
+	font-size: 12px;
+	text-align: center;
+	text-decoration:none;
+}
+
+.login form input[type="submit"]:hover, .login form a:hover, .register form input[type="submit"]:hover, .register form a:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+/*profile*/
+
+.profile h1 {
+  	text-align: left;
+  	color: white;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+}
+
+.profile form input[type="password"], .profile form input[type="text"], .profile form input[type="email"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+
+.profile form input[type="submit"] {
+  	width: 150px;
+  	padding:  15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+
+.profile form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+/*new Device*/
+
+.addDevice form input[type="text"], .addDevice form select {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.addDevice form input[type="submit"] {
+  	width: 310px;
+  	padding: 15px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.addDevice form input[type="submit"]:hover{
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+.addDevice form input[type="submit"]:hover{
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+.row{
+  display:flex;
+}
+
+/* Pre mobilné zariadenia: */
+
+@media only screen and (max-width: 800px) {
+  .menu {
+	  order: 1; flex: 1 100%;
+  }
+  
+  .main {
+    order: 2; flex: 1 100%;
+  }
+  
+  .info_graphs{
+	display: grid;
+	grid-template-columns: 100%;	
+  }
+  
+  .actual_graphs{
+	display: grid;
+	grid-template-columns: 100%;	
+  }
+  
+  .row {
+		flex-wrap:wrap;
+	}
+}
+
+@media ( max-width: 600px ) {
+	.menu {
+	  order: 1; flex: 1 100%;
+	}
+	
+	.main {
+    order: 2;
+	}
+	
+	.row {
+		flex-wrap:wrap;
+	}
+}

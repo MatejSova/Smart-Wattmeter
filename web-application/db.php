@@ -1,8 +1,8 @@
 <?php
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'webber';
-$DATABASE_PASS = '98AvorevuaN88';
-$DATABASE_NAME = 'merania';
+$DATABASE_USER = '';
+$DATABASE_PASS = '';
+$DATABASE_NAME = '';
 
 $conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {

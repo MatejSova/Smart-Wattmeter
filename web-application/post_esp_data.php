@@ -1,7 +1,7 @@
 <?php
-$dbname = "merania";
-$username = "esp";
-$password = "98AvorevuaN88";
+$dbname = "";
+$username = "";
+$password = "";
 $api_key= $zariadenie = $napatie = $value1 = $prud_senzor_1 = $prud_senzor_2 = $prud_senzor_3 = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
